@@ -60,21 +60,21 @@ section img{
 .btn-opsi{
     background-color: whitesmoke;
 }
-*{
+/* *{
     border: 1px solid red;
-}
+} */
 @media screen and (max-width: 601px) {
     body{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        height: 100%;
     }
     .player{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 100px;
     }
     section h1{
         font-size: 2em;
@@ -93,5 +93,6 @@ section img{
         left: 0;
         transform: translate(0, 0);
         font-size: 3em;
+        margin: 5px;
     }
 }
