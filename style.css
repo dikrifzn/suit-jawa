@@ -69,6 +69,16 @@ section img{
         align-items: center;
         justify-content: center;
         height: 100%;
+
+    }
+    section h1{
+        font-size: 2em;
+        margin: 3px;
+    }
+    section img{
+        height: 100px;
+        padding: 20px;
+        margin-top: 0;
     }
     .player{
         display: flex;
@@ -76,16 +86,11 @@ section img{
         align-items: center;
         justify-content: center;
     }
-    section h1{
-        font-size: 2em;
-    }
-    section img{
-        height: 100px;
-        padding: 20px;
-        margin-top: 0;
-    }
-    section.player h1{
+    .player h1{
         order: 2;
+    }
+    .player img{
+        transform: rotate(-90deg);
     }
     .vs{
         position: relative;
@@ -94,5 +99,11 @@ section img{
         transform: translate(0, 0);
         font-size: 3em;
         margin: 5px;
+    }
+    .computer img{
+        transform: rotate(90deg);
+    }
+    .opsi img{
+        transform: rotate(-90deg);
     }
 }
