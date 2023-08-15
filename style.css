@@ -1,0 +1,65 @@
+body{
+    background-color: floralwhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+.vs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+section{
+    width: 50%;
+    text-align: center;
+}
+section h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+section img{
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 50%;
+    padding: 30px;
+    margin-top: 50px;
+}
+.player img{
+    background-color: greenyellow;
+}
+.computer img{
+    transform: scaleX(-1);
+    background-color: rgb(255, 29, 29);
+}
+.opsi{
+    width: 300px;
+    height: 80px;
+    border: 2px solid black;
+    background-color: burlywood;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.opsi img{
+    height: 50px;
+    border: 2px solid black;
+    padding: 0;
+    margin-top: 0;
+    cursor: pointer;
+}
+.btn-opsi{
+    background-color: whitesmoke;
+}
+/* *{
+    border: 1px solid red;
+} */
