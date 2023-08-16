@@ -1,6 +1,10 @@
 const opsi = document.querySelectorAll('section.opsi img');
 const imgPlayer = document.querySelector('section.player img');
 const imgComputer = document.querySelector('section.computer img');
+const playerScore = document.querySelectorAll('section.player h1')[1];
+const computerScore = document.querySelectorAll('section.computer h1')[1];
+let pScore = 0;
+let cScore = 0;
 
 opsi[0].addEventListener('click', function(){
     opsi[0].classList.add('btn-opsi');
@@ -47,7 +51,7 @@ function putar(){
         imgPlayer.setAttribute('src', 'img/' + gambar[i] + '.png');
         imgComputer.setAttribute('src', 'img/' + gambar[i++] + '.png');
         if( i == gambar.length) i = 0;
-    }, 100)
+    }, 100);
 }
 function com(){
     var acak = Math.floor(Math.random() * 3)
@@ -77,11 +81,18 @@ function hasil(hasil){
     if(hasil == 'MENANG'){
         imgPlayer.style.backgroundColor = 'greenyellow';
         imgComputer.style.backgroundColor = 'rgb(255, 29, 29)';
+        pScore++;
+        if(cScore > 0) cScore--;
     }else if(hasil == 'KALAH'){
         imgPlayer.style.backgroundColor = 'rgb(255, 29, 29)';
         imgComputer.style.backgroundColor = 'greenyellow';
+        cScore++;
+        if(pScore > 0) pScore--;
     }else{
         imgPlayer.style.backgroundColor = 'grey';
         imgComputer.style.backgroundColor = 'grey';
     }
+    playerScore.innerHTML = pScore;
+    computerScore.innerHTML = cScore;
+    return;
 }

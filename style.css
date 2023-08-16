@@ -60,16 +60,16 @@ section img{
 .btn-opsi{
     background-color: whitesmoke;
 }
-/* *{
+*{
     border: 1px solid red;
-} */
+}
 @media screen and (max-width: 601px) {
     body{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         height: 100%;
-
+        padding: 20px;
     }
     section h1{
         font-size: 2em;
@@ -88,6 +88,9 @@ section img{
     }
     .player h1{
         order: 2;
+    }
+    .player h1:nth-child(3){
+        order: -1;
     }
     .player img{
         transform: rotate(-90deg);
