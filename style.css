@@ -122,6 +122,8 @@ section img{
         transform: rotate(90deg);
     }
     .opsi{
+        order: -1;
+        margin-top: 5px;
         width: 70vw;
         height: 20vw;
         border: 2px solid black;
@@ -130,10 +132,10 @@ section img{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        transform: translate(-50%, -30%);
+        position: static;
+        bottom: 0;
+        left: 0;
+        transform: translate(0, 0);
     }
     .opsi img{
         transform: rotate(-90deg);
