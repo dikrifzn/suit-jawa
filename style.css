@@ -60,16 +60,12 @@ section img{
 .btn-opsi{
     background-color: whitesmoke;
 }
-/* *{
-    border: 1px solid red;
-} */
 @media screen and (max-width: 601px) {
     body{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        height: 100%;
-        padding: 10px;
+        height: 100vh;
     }
     section h1{
         font-size: 1.5rem;
@@ -123,7 +119,7 @@ section img{
     }
     .opsi{
         order: -1;
-        margin-top: 5px;
+        margin-top: 10px;
         width: 70vw;
         height: 20vw;
         border: 2px solid black;
